@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <video
+            autoplay
+            muted
+            src="https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1586876826/ei/On2VXo3uMtGKkwal4buADQ/ip/47.151.147.174/id/21X5lGlDOfg.3/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/hls_chunk_host/r5---sn-a5meknel.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/11560/mh/N8/mm/44/mn/sn-a5meknel/ms/lva/mv/m/mvi/4/pl/17/dover/11/keepalive/yes/beids/9466587/mt/1586855115/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJpPlLswRgIhANokqNxNvVXtgpngAxmhKOUjXPeHU07QqxQWzFG2IGWqAiEAiS9ddU9miykDrYzUzox-y-gQ0BC9_yjcMfO4RqG6-tc%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/ALrAebAwRAIgMQRSCHlz-FgsCFJnv_RQvt7M1iSJYdT27nhrDHEl8LACIFLwU0KnV-JROkIHNOptee7-gS3TKGBEWkLwDmfXvQUs/playlist/index.m3u8"
+            style="position: absolute; z-index: 3; height: 120px;"
+        ></video>
+        <!-- https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1586876260/ei/BHuVXtHeBO2JsfIPgoqk6A0/ip/47.151.147.174/id/FXnpoEa9JLk.1/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/hls_chunk_host/r4---sn-a5meknl7.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/11740/mh/d9/mm/44/mn/sn-a5meknl7/ms/lva/mv/m/mvi/3/pl/17/dover/11/keepalive/yes/beids/9466587/mt/1586854576/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJpPlLswRQIgBfLMcyw1SY0hRfAKfK1wL6t9bu5ilLipE8FpIE3kpssCIQC0bTIA11qvLZyB_vh4UvG6ibAeJ3pr0TH1a_g0Rd74xA%3D%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/ALrAebAwRgIhAJrQbehVhxp26Z3KIr1CPifQe62Dd2TQU_6Yku4SaLpGAiEAxYj_NQKhDp1qPXcSCE7RaRDfY8p0grbF8aE2cWmKg10%3D/playlist/index.m3u8 -->
+        <!-- https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1586876257/ei/AXuVXrn5IdP_kgaRx5KoCg/ip/47.151.147.174/id/ab8_Uj_5EYo.1/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/hls_chunk_host/r5---sn-a5mekn7y.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/12340/mh/_B/mm/44/mn/sn-a5mekn7y/ms/lva/mv/m/mvi/4/pl/17/dover/11/keepalive/yes/beids/9466587/mt/1586854576/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJpPlLswRAIgX1YucUN-E5QaHdDWOi5gIQjPqJYX3j4fasIZZcQr2J4CIHZU6xxVvAfnKamt9mR26NTvUpzze9GItxjU0wD4IJ-k/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/ALrAebAwRgIhAKz6yim1EcZ08-WwUS5j9vljFk0aQsojcbNwKlzB3HD3AiEAzp0u9L2QO3qxsdJr6BYAOitP8p8bPERDWvQMUphE390%3D/playlist/index.m3u8 -->
+
+        <a-scene>
+            <a-assets>
+                <video id="local-video" autoplay loop="true" src="./assets/mov_bbb.mp4"></video>
+
+                <!-- <video
+                    id="streaming-video"
+                    autoplay
+                    muted
+                    src="https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1586876826/ei/On2VXo3uMtGKkwal4buADQ/ip/47.151.147.174/id/21X5lGlDOfg.3/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/hls_chunk_host/r5---sn-a5meknel.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/11560/mh/N8/mm/44/mn/sn-a5meknel/ms/lva/mv/m/mvi/4/pl/17/dover/11/keepalive/yes/beids/9466587/mt/1586855115/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJpPlLswRgIhANokqNxNvVXtgpngAxmhKOUjXPeHU07QqxQWzFG2IGWqAiEAiS9ddU9miykDrYzUzox-y-gQ0BC9_yjcMfO4RqG6-tc%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/ALrAebAwRAIgMQRSCHlz-FgsCFJnv_RQvt7M1iSJYdT27nhrDHEl8LACIFLwU0KnV-JROkIHNOptee7-gS3TKGBEWkLwDmfXvQUs/playlist/index.m3u8"
+                ></video> -->
+            </a-assets>
+
+            <!-- <a-video src="#streaming-video" width="16" height="9" position="0 8 -20"></a-video> -->
+            <!-- <a-video autoplay muted src="https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1586876826/ei/On2VXo3uMtGKkwal4buADQ/ip/47.151.147.174/id/21X5lGlDOfg.3/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/goi/160/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/hls_chunk_host/r5---sn-a5meknel.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/11560/mh/N8/mm/44/mn/sn-a5meknel/ms/lva/mv/m/mvi/4/pl/17/dover/11/keepalive/yes/beids/9466587/mt/1586855115/disable_polymer/true/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,goi,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJpPlLswRgIhANokqNxNvVXtgpngAxmhKOUjXPeHU07QqxQWzFG2IGWqAiEAiS9ddU9miykDrYzUzox-y-gQ0BC9_yjcMfO4RqG6-tc%3D/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/ALrAebAwRAIgMQRSCHlz-FgsCFJnv_RQvt7M1iSJYdT27nhrDHEl8LACIFLwU0KnV-JROkIHNOptee7-gS3TKGBEWkLwDmfXvQUs/playlist/index.m3u8" width="16" height="9" position="0 8 -20"></a-video> -->
+
+            <a-video src="#local-video" width="16" height="9" position="-20 8 -20"></a-video>
+
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
